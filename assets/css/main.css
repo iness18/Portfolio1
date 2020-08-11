@@ -25,6 +25,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -1522,25 +1523,29 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		padding-left: 1em;
+		padding-right: 1em;
 	}
 
 		ul li {
-			padding-left: 1.5em;
-			margin-top: 1.5em;
+			padding-right: 1.5em;
+			/*margin-top: 10px*/
 		}
 
 			ul li:first-child {
 				margin-top: 0;
 			}
 
+			li a:hover{
+				color: white;
+			}
+
 	ol {
 		list-style: decimal;
-		padding-left: 1.25em;
+		padding-right: 1.25em;
 	}
 
 		ol li {
-			padding-left: 1.25em;
+			padding-right: 1.25em;
 			margin-top: 1.5em;
 		}
 
@@ -1549,12 +1554,12 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding-right: 0;
 	}
 
 		ul.icons li {
 			display: inline-block;
-			padding-left: 0;
+			padding-right: 0;
 			margin-top: 0;
 		}
 
@@ -1570,42 +1575,36 @@ input, select, textarea {
 /* Menu */
 
 	ul.menu {
-		cursor: default;
+		cursor: pointer;
 		list-style: none;
-		padding-left: 0;
+		padding-right: 0;
 	}
 
 		ul.menu li {
 			display: inline-block;
 			line-height: 1em;
-			border-left: solid 1px #dad9d9;
+
 			padding: 0 0 0 0.5em;
 			margin: 0 0 0 0.5em;
 		}
 
-			ul.menu li:first-child {
-				border-left: 0;
-				padding-left: 0;
-				margin-left: 0;
-			}
-
 /* Actions */
 
 	ul.actions {
-		cursor: default;
+		cursor: pointer;
 		list-style: none;
-		padding-left: 0;
+		padding-right: 0;
 	}
 
 		ul.actions li {
 			display: inline-block;
 			margin: 0 0 0 0.5em;
-			padding-left: 0;
+			padding-right: 0;
 			margin-top: 0;
 		}
 
 			ul.actions li:first-child {
-				margin-left: 0;
+				margin-right: 0;
 			}
 
 /* Form */
@@ -2641,5 +2640,4 @@ input, select, textarea {
 			.poptrox-popup .closer {
 				opacity: 0.5;
 			}
-
 	}
