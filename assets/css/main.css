@@ -12,11 +12,11 @@ iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+u, i, center, dl, dt, dd, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -27,17 +27,17 @@ section, summary, time, mark, audio, video {
 
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, nav, section {
 	display: block;}
 
 body {
 	line-height: 1;
 }
 
-ol, ul {
+/*ol, ul {
 	list-style: none;
 	float: right;
-}
+}*/
 
 blockquote, q {
 	quotes: none;
@@ -1520,7 +1520,7 @@ input, select, textarea {
 				width: auto;
 			}
 
-/* List */
+/* List
 
 	ul {
 		list-style: disc;
@@ -1529,7 +1529,7 @@ input, select, textarea {
 
 		ul li {
 			padding-right: 1.5em;
-			/*margin-top: 10px*/
+			/*margin-top: 10px
 		}
 
 			ul li:first-child {
@@ -1548,9 +1548,9 @@ input, select, textarea {
 		ol li {
 			padding-right: 1.25em;
 			margin-top: 1.5em;
-		}
+		}*/
 
-/* Icons */
+/* Icons
 
 	ul.icons {
 		cursor: default;
@@ -1571,9 +1571,9 @@ input, select, textarea {
 			line-height: 2.5em;
 			text-align: center;
 			border: 0;
-		}
+		}*/
 
-/* Menu */
+/* Menu
 
 	ul.menu {
 		cursor: pointer;
@@ -1586,9 +1586,9 @@ input, select, textarea {
 			line-height: 1em;
 			padding: 0 0 0 0.5em;
 			margin: 0 0 0 0.5em;
-		}
+		}*/
 
-/* Actions */
+/* Actions
 
 	ul.actions {
 		cursor: pointer;
@@ -1605,7 +1605,7 @@ input, select, textarea {
 
 			ul.actions li:first-child {
 				margin-right: 0;
-			}
+			}*/
 
 /* Form */
 
@@ -2426,6 +2426,153 @@ input, select, textarea {
 
 	}
 
+	#menu-nav-wrap {
+	background: #111111;
+	color: rgba(255, 255, 255, 0.25);
+	font-family: "montserrat-regular", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	padding: 3.6rem 3rem;
+	height: 100%;
+	width: 240px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 800;
+	overflow-y: auto;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+#menu-nav-wrap a,
+#menu-nav-wrap a:visited {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#menu-nav-wrap a:hover,
+#menu-nav-wrap a:focus,
+#menu-nav-wrap a:active {
+	color: white;
+}
+
+#menu-nav-wrap h3 {
+	color: white;
+	font-family: "montserrat-regular", sans-serif;
+	font-size: 2rem;
+	line-height: 1.5;
+	margin-bottom: 1.5rem;
+}
+
+#menu-nav-wrap .nav-list {
+	margin: 3.6rem 0 1.5rem 0;
+	padding: 0 0 1.8rem 0;
+	list-style: none;
+	line-height: 3.6rem;
+}
+
+#menu-nav-wrap .nav-list li {
+	padding-left: 0;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.03);
+	line-height: 4.2rem;
+}
+
+#menu-nav-wrap .nav-list li:first-child {
+	border-top: 1px dotted rgba(255, 255, 255, 0.03);
+}
+
+#menu-nav-wrap .nav-list li a {
+	color: rgba(255, 255, 255, 0.25);
+	display: block;
+}
+
+#menu-nav-wrap .nav-list li a:hover,
+#menu-nav-wrap .nav-list li a:focus {
+	color: white;
+}
+
+#menu-nav-wrap .header-social-list {
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+	font-size: 2.1rem;
+}
+
+#menu-nav-wrap .header-social-list li {
+	margin-right: 12px;
+	padding-left: 0;
+	display: inline-block;
+}
+
+#menu-nav-wrap .header-social-list li a {
+	color: rgba(255, 255, 255, 0.15);
+}
+
+#menu-nav-wrap .header-social-list li a:hover,
+#menu-nav-wrap .header-social-list li a:focus {
+	color: white;
+}
+
+#menu-nav-wrap .header-social-list li:last-child {
+	margin: 0;
+}
+
+#menu-nav-wrap .close-button {
+	display: block;
+	height: 30px;
+	width: 30px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 36px;
+	right: 30px;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+#menu-nav-wrap .close-button span::before,
+#menu-nav-wrap .close-button span::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 12px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 9px;
+	margin-top: -1px;
+}
+
+#menu-nav-wrap .close-button span::before {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#menu-nav-wrap .close-button span::after {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* menu is open */
+.menu-is-open #menu-nav-wrap {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	visibility: visible;
+	-webkit-overflow-scrolling: touch;
+}
+
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
@@ -2451,7 +2598,7 @@ input, select, textarea {
 				letter-spacing: 4px;
 			}
 
-		/* List */
+		/* List
 
 			ul li {
 				padding-left: 0.5em;
@@ -2461,16 +2608,15 @@ input, select, textarea {
 				padding-left: 0.25em;
 			}
 
-		/* Icons */
+		/* Icons
 
 			ul.icons a {
 				width: 2em;
 				height: 2em;
 				line-height: 2em;
-			}
+			}*/
 
-		/* Menu */
-
+		/* Menu
 			ul.menu li {
 				display: block;
 				padding: 0;
@@ -2482,7 +2628,7 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
-		/* Actions */
+		/* Actions
 
 			ul.actions li {
 				display: block;
@@ -2491,7 +2637,7 @@ input, select, textarea {
 
 				ul.actions li:first-child {
 					margin-top: 0;
-				}
+				}*/
 
 		/* Button */
 

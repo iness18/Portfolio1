@@ -18,6 +18,58 @@
 
 		};
 
+		/* Menu on Scrolldown
+	 * ------------------------------------------------------ */
+	var ssMenuOnScrolldown = function() {
+
+		var menuTrigger = $('#header-menu-trigger');
+
+		$WIN.on('scroll', function() {
+
+			if ($WIN.scrollTop() > 150) {
+				menuTrigger.addClass('opaque');
+			}
+			else {
+				menuTrigger.removeClass('opaque');
+			}
+
+		});
+	};
+
+
+  	/* OffCanvas Menu
+	 * ------------------------------------------------------ */
+   var ssOffCanvas = function() {
+
+	       var menuTrigger = $('#header-menu-trigger'),
+	       nav             = $('#menu-nav-wrap'),
+	       closeButton     = nav.find('.close-button'),
+	       siteBody        = $('body'),
+	       mainContents    = $('section, footer');
+
+		// open-close menu by clicking on the menu icon
+		menuTrigger.on('click', function(e){
+			e.preventDefault();
+			menuTrigger.toggleClass('is-clicked');
+			siteBody.toggleClass('menu-is-open');
+		});
+
+		// close menu by clicking the close button
+		closeButton.on('click', function(e){
+			e.preventDefault();
+			menuTrigger.trigger('click');
+		});
+
+		// close menu clicking outside the menu itself
+		siteBody.on('click', function(e){
+			if( !$(e.target).is('#menu-nav-wrap, #header-menu-trigger, #header-menu-trigger span') ) {
+				menuTrigger.removeClass('is-clicked');
+				siteBody.removeClass('menu-is-open');
+			}
+		});
+
+   };
+
 	// Breakpoints.
 		breakpoints({
 			wide:    [ '1081px',  '1680px' ],
@@ -103,10 +155,7 @@
 		});
 
 
-		// Closes responsive menu when a scroll trigger link is clicked
-	$(".js-scroll-trigger").click(function () {
-			$(".navbar-collapse").collapse("hide");
-	});
+
 
 	// Activate scrollspy to add active class to navbar items on scroll
 	$("body").scrollspy({
