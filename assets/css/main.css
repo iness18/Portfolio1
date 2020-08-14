@@ -27,7 +27,7 @@ section, summary, time, mark, audio, video {
 
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, nav, section {
+footer, header, hgroup, nav,menu, section {
 	display: block;}
 
 body {
@@ -1520,7 +1520,7 @@ input, select, textarea {
 				width: auto;
 			}
 
-/* List
+/* List */
 
 	ul {
 		list-style: disc;
@@ -1529,7 +1529,7 @@ input, select, textarea {
 
 		ul li {
 			padding-right: 1.5em;
-			/*margin-top: 10px
+			/*margin-top: 10px*/
 		}
 
 			ul li:first-child {
@@ -1548,9 +1548,9 @@ input, select, textarea {
 		ol li {
 			padding-right: 1.25em;
 			margin-top: 1.5em;
-		}*/
+		}
 
-/* Icons
+/* Icons*/
 
 	ul.icons {
 		cursor: default;
@@ -1571,7 +1571,7 @@ input, select, textarea {
 			line-height: 2.5em;
 			text-align: center;
 			border: 0;
-		}*/
+		}
 
 /* Menu
 
@@ -1588,7 +1588,7 @@ input, select, textarea {
 			margin: 0 0 0 0.5em;
 		}*/
 
-/* Actions
+/* Actions*/
 
 	ul.actions {
 		cursor: pointer;
@@ -1605,7 +1605,7 @@ input, select, textarea {
 
 			ul.actions li:first-child {
 				margin-right: 0;
-			}*/
+			}
 
 /* Form */
 
@@ -2426,6 +2426,88 @@ input, select, textarea {
 
 	}
 
+	#header-menu-trigger {
+	display: block;
+	position: fixed;
+	right: 26px;
+	top: 30px;
+	height: 42px;
+	width: 42px;
+	line-height: 42px;
+	font-family: "montserrat-regular", sans-serif;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: rgba(255, 255, 255, 0.5);
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#header-menu-trigger.opaque {
+	background-color: #000000;
+}
+
+#header-menu-trigger.opaque .header-menu-text {
+	background-color: #000000;
+}
+
+#header-menu-trigger:hover,
+#header-menu-trigger:focus {
+	color: #FFFFFF;
+}
+
+#header-menu-trigger .header-menu-text {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -75px;
+	width: 75px;
+	text-align: center;
+	background-color: transparent;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#header-menu-trigger .header-menu-icon {
+	display: block;
+	height: 2px;
+	width: 24px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	right: 9px;
+	margin-top: -2px;
+}
+
+#header-menu-trigger .header-menu-icon::before,
+#header-menu-trigger .header-menu-icon::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: inherit;
+	position: absolute;
+	left: 0;
+}
+
+#header-menu-trigger .header-menu-icon::before {
+	top: -9px;
+}
+
+#header-menu-trigger .header-menu-icon::after {
+	bottom: -9px;
+}
+
+@media only screen and (max-width:400px) {
+	#header-menu-trigger .header-menu-text {
+		display: none;
+	}
+
 	#menu-nav-wrap {
 	background: #111111;
 	color: rgba(255, 255, 255, 0.25);
@@ -2571,6 +2653,61 @@ input, select, textarea {
 	transform: translateX(0);
 	visibility: visible;
 	-webkit-overflow-scrolling: touch;
+}
+
+#go-top {
+	position: fixed;
+	bottom: 42px;
+	right: 30px;
+	z-index: 700;
+	display: none;
+}
+
+#go-top a {
+	text-decoration: none;
+	border: 0 none;
+	display: block;
+	height: 63px;
+	width: 60px;
+	line-height: 63px;
+	text-align: center;
+	background-color: #000000;
+	color: #888;
+	text-align: center;
+	text-transform: uppercase;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#go-top a i {
+	font-size: 21px;
+	line-height: inherit;
+}
+
+#go-top a:visited {
+	background: #000000;
+	color: #888;
+}
+
+#go-top a:hover,
+#go-top a:focus {
+	background: #000000;
+	color: #FFFFFF;
+}
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * footer
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width:768px) {
+	#go-top {
+		bottom: 0;
+		right: 0;
+	}
+
 }
 
 /* Mobile */

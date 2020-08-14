@@ -11,40 +11,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="js/modernizr.js"></script>
+		<script src="js/pace.min.js"></script>
+
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
 	</head>
 	<body class="is-preload">
 
-		<a id="header-menu-trigger" href="#0">
-				 	<span class="header-menu-text">Menu</span>
-				  	<span class="header-menu-icon"></span>
-				</a>
-
-		<nav id="menu-nav-wrap">
-
-		<a href="#0" class="close-button" title="close"><span>Close</span></a>
-
-		<ul class="nav-list">
-			<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
-			<li><a class="smoothscroll" href="#about" title="">About</a></li>
-			<li><a class="smoothscroll" href="#skills" title="">Skills</a></li>
-			<li><a class="smoothscroll" href="#credentials" title="">Experience</a></li>
-			<li><a class="smoothscroll" href="#portfolio" title="">Works</a></li>
-			<li><a class="smoothscroll" href="#stats" title="">Stats</a></li>
-			<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-		</ul>
-
-		<ul class="header-social-list">
-				 <li>
-					<a href="#"><i class="fa fa-facebook-square"></i></a>
-				 </li>
-				 <li>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-				 </li>
-			</ul>
-
-	</nav>  <!-- end #menu-nav-wrap -->
 		<!-- Header -->
 			<section id="header">
+
+				<!--<div class="header-logo">
+						<a href="index.html">Iness Brakeni</a>
+				 </div>-->
+
+				<a id="header-menu-trigger" href="#0">
+							<span class="header-menu-text">Menu</span>
+								<span class="header-menu-icon"></span>
+						</a>
+
+				<nav id="menu-nav-wrap">
+
+				<a href="#0" class="close-button" title="close"><span>Close</span></a>
+
+				<h3>Iness Brakeni</h3>
+
+				<ul class="nav-list">
+					<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
+					<li><a class="smoothscroll" href="#about" title="">About</a></li>
+					<li><a class="smoothscroll" href="#skills" title="">Skills</a></li>
+					<li><a class="smoothscroll" href="#credentials" title="">Experience</a></li>
+					<li><a class="smoothscroll" href="#portfolio" title="">Works</a></li>
+					<li><a class="smoothscroll" href="#stats" title="">Stats</a></li>
+					<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+				</ul>
+
+				<ul class="header-social-list">
+						 <li>
+							<a href="#"><i class="fa fa-facebook-square"></i></a>
+						 </li>
+						 <li>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						 </li>
+					</ul>
+
+			</nav>  <!-- end #menu-nav-wrap -->
 				<header>
 					<h1>Brakeni Iness</h1>
 					<p>En recherche d'un contrat d'apprentissage en développement Front-End</p>
@@ -136,20 +150,36 @@
 					<h2>Contact</h2>
 					<p>Email : <a	href="mailto:iness.brakenisp@gmail.com">iness.brakenisp@gmail.com</a></p>
 				</header>
-				<form method="post" action="#">
+
+				<form method="post">
 					<div class="row gtr-50">
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Nom" /></div>
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
+						<div class="col-6 col-12-mobile">
+							<input type="text" class="text" name="name" placeholder="Nom" minlength="2" required=""/>
+						</div>
+						<div class="col-6 col-12-mobile">
+							<input type="email" class="text" name="email" placeholder="Email" required=""/>
+						</div>
 						<div class="col-12">
-							<textarea name="message" placeholder="Message"></textarea>
+							<textarea name="message" placeholder="Message">
+							</textarea>
 						</div>
 						<div class="col-12">
 							<ul class="actions">
-								<li><input type="submit" value="Envoyer" /></li>
+								<li><input type="submit" value="Envoyer" />
+								</li>
 							</ul>
 						</div>
 					</div>
+					<div id="submit-loader">
+										<div class="text-loader">Sending...</div>
+								<div class="s-loader">
+								<div class="bounce1"></div>
+								<div class="bounce2"></div>
+								<div class="bounce3"></div>
+						</div>
+					</div>
 				</form>
+
 			</article>
 
 		<!-- Generic -->
@@ -306,16 +336,23 @@
 				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 			</ul>
+
+			<div id="go-top">
+		 	<a class="smoothscroll" title="Back to Top" href="#header"><i class="icon-UpArrow"></i></a>
+			</div>
 		</section>
 
 		<!-- Scripts -->
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
+
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
