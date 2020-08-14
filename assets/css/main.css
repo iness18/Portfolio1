@@ -2845,6 +2845,34 @@ input, select, textarea {
 					padding: 2em 1.25em 2em 1.25em;
 				}
 
+
+				/* form loader */
+				#submit-loader {
+					display: none;
+					position: relative;
+					left: 0;
+					top: 1.8rem;
+					width: 100%;
+					text-align: center;
+					margin-bottom: 4.2rem;
+				}
+
+				#submit-loader .text-loader {
+					display: none;
+					font-family: "montserrat-bold", sans-serif;
+					color: #FFFFFF;
+					letter-spacing: .2rem;
+					text-transform: uppercase;
+				}
+
+				.oldie #submit-loader .s-loader {
+					display: none;
+				}
+
+				.oldie #submit-loader .text-loader {
+					display: block;
+				}
+
 		/* Header */
 
 			#header {
