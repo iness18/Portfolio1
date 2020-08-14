@@ -1520,7 +1520,7 @@ input, select, textarea {
 				width: auto;
 			}
 
-/* List */
+/* List
 
 	ul {
 		list-style: disc;
@@ -1529,7 +1529,7 @@ input, select, textarea {
 
 		ul li {
 			padding-right: 1.5em;
-			/*margin-top: 10px*/
+			/*margin-top: 10px
 		}
 
 			ul li:first-child {
@@ -1548,7 +1548,7 @@ input, select, textarea {
 		ol li {
 			padding-right: 1.25em;
 			margin-top: 1.5em;
-		}
+		}*/
 
 /* Icons*/
 
@@ -1571,6 +1571,13 @@ input, select, textarea {
 			line-height: 2.5em;
 			text-align: center;
 			border: 0;
+		}
+
+
+		*,
+		*::before,
+		*::after {
+			box-sizing: inherit;
 		}
 
 /* Menu
@@ -2548,7 +2555,6 @@ input, select, textarea {
 
 #menu-nav-wrap h3 {
 	color: white;
-	font-family: "montserrat-regular", sans-serif;
 	font-size: 2rem;
 	line-height: 1.5;
 	margin-bottom: 1.5rem;
@@ -2618,7 +2624,7 @@ input, select, textarea {
 	right: 30px;
 	font: 0/0 a;
 	text-shadow: none;
-	color: transparent;
+	color: #fff;
 }
 
 #menu-nav-wrap .close-button span::before,

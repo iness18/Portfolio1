@@ -10,8 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/vendor.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="js/modernizr.js"></script>
 		<script src="js/pace.min.js"></script>
 
 
@@ -20,6 +20,12 @@
 
 	</head>
 	<body class="is-preload">
+		<div class="pace-done">
+			<div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+		  	<div class="pace-progress-inner">
+				</div>
+			</div>
+			<div class="pace-activity"></div>
 
 		<!-- Header -->
 			<section id="header">
@@ -336,24 +342,26 @@
 				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 			</ul>
-
 			<div id="go-top">
 		 	<a class="smoothscroll" title="Back to Top" href="#header"><i class="icon-UpArrow"></i></a>
 			</div>
 		</section>
 
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
 		<!-- Scripts -->
 
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery-2.3.1.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
-
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-
+			</div>
 	</body>
 </html>
