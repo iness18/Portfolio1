@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'iness.brak@gmail.com';
+$siteOwnersEmail = 'iness.brakenisp@gmail.com';
 
 
 if($_POST) {
@@ -46,7 +46,7 @@ if($_POST) {
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $contactEmail = mail($siteOwnersEmail, $message, $headers);
 
-		if ($contactEmail) { echo "OK"; }
+		if ($contactEmail) { echo "Message envoyé"; }
       else { echo "Une erreur c'est produite, veuillez réessayer."; }
 
 	} # end if - no validation error
