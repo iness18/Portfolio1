@@ -39,6 +39,7 @@ if($_POST) {
 	$headers .= "Reply-To: ". $contactEmail . "\r\n";
  	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+  $headers .= "Content-Transfert-Encoding: 8bit";
 
 
    if (!$error) {
@@ -60,6 +61,8 @@ if($_POST) {
 		echo $response;
 
 	} # end if - there was a validation error
+
+  mail($siteOwnersEmail,$contactName, $contactEmail, $contact_message);
 
 }
 
