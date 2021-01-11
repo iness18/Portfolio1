@@ -218,6 +218,26 @@ input, select, textarea {
 		clear: both;
 	}
 
+
+	.btn
+	{
+	height: 100px;
+	width: 100px;
+	border-radius: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	cursor: pointer;
+	z-index: 1;
+	}
+
+	.btn_arrow{
+		width: 30px;
+	  }
+
 /* Container */
 
 	.container {
