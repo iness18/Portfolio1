@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $(window).scroll(function(){
-    if($(this).scrollTop() > 1140){
-      $('.btn').fadeIn();
-    }else {
+    if($(this).scrollTop() < 1140){
       $('.btn').fadeOut();
+    }else {
+      $('.btn').fadeIn();
     }
   });
 
