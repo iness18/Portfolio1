@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("fontawesome-all.min.css");
 
-/*
-	Overflow by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1509,66 +1503,37 @@ input, select, textarea {
 		border: 0;
 	}
 
-		.image img {
-			display: block;
-			width: 100%;
-		}
-
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
-
-		.image.fit {
-			display: block;
-			width: 100%;
-		}
-
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		.image.centered {
-			display: block;
-			margin: 0 0 2em 0;
-		}
-
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
-
-/* List
-
-	ul {
-		list-style: disc;
-		padding-right: 1em;
+	.image img {
+		display: block;
+		width: 100%;
 	}
 
-		ul li {
-			padding-right: 1.5em;
-			/*margin-top: 10px
-		}
-
-			ul li:first-child {
-				margin-top: 0;
-			}
-
-			li a:hover{
-				color: white;
-			}
-
-	ol {
-		list-style: decimal;
-		padding-right: 1.25em;
+	.image.featured {
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
 	}
 
-		ol li {
-			padding-right: 1.25em;
-			margin-top: 1.5em;
-		}*/
+	.image.fit {
+		display: block;
+		width: 100%;
+	}
+
+	.image.left {
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+
+	.image.centered {
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+	.image.centered img {
+		margin: 0 auto;
+		width: auto;
+	}
+
 
 /* Icons*/
 
@@ -1599,21 +1564,6 @@ input, select, textarea {
 		*::after {
 			box-sizing: inherit;
 		}
-
-/* Menu
-
-	ul.menu {
-		cursor: pointer;
-		list-style: none;
-		padding-right: 0;
-	}
-
-		ul.menu li {
-			display: inline-block;
-			line-height: 1em;
-			padding: 0 0 0 0.5em;
-			margin: 0 0 0 0.5em;
-		}*/
 
 /* Actions*/
 
@@ -2130,11 +2080,11 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-			#banner header h2 {
-				font-weight: 400;
-				font-size: 1.75em;
-				letter-spacing: 8px;
-			}
+		#banner header h2 {
+			font-weight: 400;
+			font-size: 1.75em;
+			letter-spacing: 8px;
+		}
 
 		#banner p {
 			margin: 0;
@@ -2149,9 +2099,9 @@ input, select, textarea {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			#banner a:hover {
-				border-bottom-color: rgba(255, 255, 255, 0);
-			}
+		#banner a:hover {
+			border-bottom-color: rgba(255, 255, 255, 0);
+		}
 
 /* Footer */
 
